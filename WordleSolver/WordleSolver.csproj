@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="InputSimulator" Version="1.0.4" />
     <PackageReference Include="Selenium.WebDriver" Version="4.7.0" />
   </ItemGroup>
 
