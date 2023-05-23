@@ -10,6 +10,7 @@ namespace WebScrap
         public WebScraper()
         {
             driver = new ChromeDriver();
+
             driver.Navigate().GoToUrl("https://www.nytimes.com/games/wordle/index.html");
 
             var discoverRejectButton = driver.FindElement(By.Id("pz-gdpr-btn-reject"));
