@@ -15,8 +15,12 @@ namespace WebScrap
             var discoverRejectButton = driver.FindElement(By.Id("pz-gdpr-btn-reject"));
             discoverRejectButton.Click();
 
+            var discoverWelcomeButton = driver.FindElement(By.ClassName("Welcome-module_button__ZG0Zh"));
+            discoverWelcomeButton.Click();
+
             var discoverXButton = driver.FindElement(By.ClassName("Modal-module_closeIcon__TcEKb"));
-            discoverXButton.Click();
+            discoverXButton.Click(); 
+            
         }
 
         public Dictionary<int, string[]> GetDataFromWeb(int attempt)

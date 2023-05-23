@@ -31,6 +31,7 @@ namespace WordleSolver
             //yellow = "present"
             //green = "correct"
             //grey = "absent"
+
             var greenCount = 0;
             foreach (var letter in data)
             {
@@ -69,25 +70,6 @@ namespace WordleSolver
 
         public string PickNewWord(List<string> words)
         {
-            /*var new_table = from w in xd
-                            where w[0] == green_letters[0]
-                            select w;*/
-                            /*.Concat(from w in words
-                                    where w[1].Equals(green_letters[1])
-                                    select w)
-                            .Concat(from w in words
-                                    where w[2].Equals(green_letters[2])
-                                    select w)
-                            .Concat(from w in words
-                                    where w[3].Equals(green_letters[3])
-                                    select w)
-                            .Concat(from w in words
-                                    where w[4].Equals(green_letters[4])
-                                    select w).ToList();
-                            .Concat(from w in words
-                                    where yellow.Contains()
-                                    select w);*/
-
             foreach (var item in words)
             {
                 int i = 0;
@@ -98,6 +80,7 @@ namespace WordleSolver
                 foreach(var letter in item)
                 {
                     if (used_letters_dic[key: i + 1].Contains(letter)) break;
+
                     if (used_letters.Contains(letter))
                     {
                         if ((yellow.Contains(letter) && counter == 0) || (green_letters.Contains(letter) && !alreadyChecked.Contains(letter))) alreadyChecked.Add(letter); 
